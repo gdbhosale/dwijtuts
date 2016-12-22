@@ -70,4 +70,24 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	Route::get(config('laraadmin.adminRoute') . '/backup_dt_ajax', 'LA\BackupsController@dtajax');
 	Route::post(config('laraadmin.adminRoute') . '/create_backup_ajax', 'LA\BackupsController@create_backup_ajax');
 	Route::get(config('laraadmin.adminRoute') . '/downloadBackup/{id}', 'LA\BackupsController@downloadBackup');
+
+    /* ================== Students ================== */
+    Route::resource(config('laraadmin.adminRoute') . '/students', 'LA\StudentsController');
+    Route::get(config('laraadmin.adminRoute') . '/student_dt_ajax', 'LA\StudentsController@dtajax');
+
+    /* ================== Colleges ================== */
+    Route::resource(config('laraadmin.adminRoute') . '/colleges', 'LA\CollegesController');
+    Route::get(config('laraadmin.adminRoute') . '/college_dt_ajax', 'LA\CollegesController@dtajax');
+
+    /* ================== Courses ================== */
+    Route::resource(config('laraadmin.adminRoute') . '/courses', 'LA\CoursesController');
+    Route::get(config('laraadmin.adminRoute') . '/course_dt_ajax', 'LA\CoursesController@dtajax');
+
+    /* ================== Chapters ================== */
+    Route::resource(config('laraadmin.adminRoute') . '/chapters', 'LA\ChaptersController');
+    Route::get(config('laraadmin.adminRoute') . '/chapter_dt_ajax', 'LA\ChaptersController@dtajax');
+
+    /* ================== Batches ================== */
+    Route::resource(config('laraadmin.adminRoute') . '/batches', 'LA\BatchesController');
+    Route::get(config('laraadmin.adminRoute') . '/batch_dt_ajax', 'LA\BatchesController@dtajax');
 });

@@ -61,7 +61,12 @@
                     <li><a href="{{ url('/login') }}">Login</a></li>
                     <!--<li><a href="{{ url('/register') }}">Register</a></li>-->
                 @else
-                    <li><a href="{{ url(config('laraadmin.adminRoute')) }}">{{ Auth::user()->name }}</a></li>
+                    @if (Auth::user() && Auth::user()->type == "Student")
+                        <li><a href="{{ url('/student') }}">{{ Auth::user()->name }}</a></li>
+                    @else
+                        <li><a href="{{ url(config('laraadmin.adminRoute')) }}">{{ Auth::user()->name }}</a></li>
+                    @endif
+                    <li><a href="{{ url('/logout') }}">Log out</a></li>
                 @endif
             </ul>
         </div><!--/.nav-collapse -->
@@ -174,24 +179,75 @@
         </div>
 
         <div class="col-lg-7">
-            <h3>Drop Us A Line</h3>
+            <h3>Register here..</h3>
             <br>
-            <form role="form" action="#" method="post" enctype="plain">
-                <div class="form-group">
-                    <label for="name1">Your Name</label>
-                    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
+           <form role="form" id="student-register-form" action="{{ url('register') }}" class="smart-form" novalidate="novalidate" method="post">
+				{{ csrf_field() }}
+                <input type="hidden" name="reg_type" value="STUDENT">
+                <div class="row">
+					<div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="name1">Name</label>
+                            <input type="name" name="name" class="form-control" id="name1" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="mobile">Mobile</label>
+                            <input type="tel" class="form-control" placeholder="Mobile" name="mobile" id="mobile" value=""/>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email1">Email address</label>
-                    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="email1">Email</label>
+                            <input type="email" class="form-control" placeholder="Email" name="email" id="email" value=""/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="college">College</label>
+                            <input type="text" class="form-control" placeholder="College Name" name="college" id="college" value=""/>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Your Text</label>
-                    <textarea class="form-control" name="Message" rows="3"></textarea>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="college">Degree</label>
+                            <input type="text" class="form-control" placeholder="Degree Name" name="degree" id="degree" value=""/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" placeholder="City" name="city" id="city" value=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" placeholder="Password" name="password" id="password"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="password">Retype password</label>
+                            <input type="password" class="form-control" placeholder="Retype password" name="password_confirmation" id="password_confirmation"/>
+                        </div>
+                    </div>
                 </div>
                 <br>
                 <button type="submit" class="btn btn-large btn-success">SUBMIT</button>
             </form>
+            @if($errors) 
+                @foreach ($errors->all() as $error)
+                    <div style="color:red;">{{ $error }}</div>
+                @endforeach
+			@endif
         </div>
     </div>
 </div>
@@ -207,11 +263,44 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{{ asset('/la-assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
+@push('styles')
+@endpush
+
+
+@push('scripts')
 <script>
-    $('.carousel').carousel({
-        interval: 3500
-    })
+$('.carousel').carousel({
+    interval: 3500
+})
+
+$(document).ready(function() {
+    $('#student-register-form').validate({
+        rules : {
+            name:{required : true, maxlength: 255},
+            mobile:{required : true, maxlength: 255},
+            email:{required : true, email : true, unique : true, maxlength: 255},
+            college:{required : true, maxlength: 255},
+            degree:{required : true, maxlength: 255},
+            city:{required : true, maxlength: 255},
+            password:{required : true, minlength: 6},
+            password_confirmation:{required : true, same:password, minlength: 6}
+        },
+        messages : {
+            name:{required : 'Please enter name'},
+            mobile:{required : 'Please enter mobile'},
+            email:{required : 'Please enter email'},
+            college:{required : 'Please enter college'},
+            degree:{required : 'Please enter degree'},
+            city:{required : 'Please enter city'},
+            password:{required : 'Please enter password'},
+            password_confirmation:{required : 'Please enter password'}
+        },
+        errorPlacement : function(error, element) {
+            error.insertAfter(element.parent());
+        }
+    });
+});
 </script>
+@endpush
 </body>
 </html>

@@ -63,19 +63,33 @@ class DatabaseSeeder extends Seeder
 		$dept->tags = "[]";
 		$dept->color = "#000";
 		$dept->save();
+
+		$deptUsers = new Department;
+		$deptUsers->name = "Users";
+		$deptUsers->tags = "[]";
+		$deptUsers->color = "#000";
+		$deptUsers->save();
 		
 		// Create Super Admin Role
-		$role = new Role;
-		$role->name = "SUPER_ADMIN";
-		$role->display_name = "Super Admin";
-		$role->description = "Full Access Role";
-		$role->parent = 1;
-		$role->dept = $dept->id;
-		$role->save();
-		
+		$roleSA = new Role;
+		$roleSA->name = "SUPER_ADMIN";
+		$roleSA->display_name = "Super Admin";
+		$roleSA->description = "Full Access Role";
+		$roleSA->parent = 1;
+		$roleSA->dept = $dept->id;
+		$roleSA->save();
+
+        $roleStudent = new Role;
+        $roleStudent->name = "Student";
+        $roleStudent->display_name = "STUDENT";
+        $roleStudent->description = "Student Role";
+        $roleStudent->parent = 2;
+        $roleStudent->dept = $deptUsers->id;
+        $roleStudent->save();
+        
 		// Set Full Access For Super Admin Role
 		foreach ($modules as $module) {
-			Module::setDefaultRoleAccess($module->id, $role->id, "full");
+			Module::setDefaultRoleAccess($module->id, $roleSA->id, "full");
 		}
 		
 		// Create Admin Panel Permission
@@ -85,7 +99,7 @@ class DatabaseSeeder extends Seeder
 		$perm->description = "Admin Panel Permission";
 		$perm->save();
 		
-		$role->attachPermission($perm);
+		$roleSA->attachPermission($perm);
 		
 		// Generate LaraAdmin Default Configurations
 		

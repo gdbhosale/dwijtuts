@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/* ================== student ================== */
+Route::get('/student', 'StudentController@index');
+
+/* ================== course ================== */
+Route::get('/student/course', 'CourseController@index');
+
+
 /* ================== Homepage + Admin Routes ================== */
 
 require __DIR__.'/admin_routes.php';

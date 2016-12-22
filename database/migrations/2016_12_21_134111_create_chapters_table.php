@@ -32,16 +32,15 @@ class CreateChaptersTable extends Migration
                 "required" => true,
                 "listing_col" => true
             ], [
-                "colname" => "course",
-                "label" => "Course",
-                "field_type" => "Dropdown",
-                "unique" => false,
+                "colname" => "slide_file",
+                "label" => "Slide File",
+                "field_type" => "String",
+                "unique" => true,
                 "defaultvalue" => "",
-                "minlength" => 0,
-                "maxlength" => 0,
+                "minlength" => 5,
+                "maxlength" => 50,
                 "required" => true,
-                "listing_col" => true,
-                "popup_vals" => "@courses",
+                "listing_col" => true
             ]
         ]);
         
