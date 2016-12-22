@@ -1,0 +1,1250 @@
+<section>
+    <h3>Introduction to</h3>
+    <h1>Web Development</h1>
+    <p>
+        <small>Created by <a target="_blank" href="https://twitter.com/gdbhosale">Ganesh Bhosale</a> in <a target="_blank" href="http://dwijitsolutions.com">Dwij IT Solutions</a></small><br>
+        <a href="http://dwijitsolutions.com" target="_blank">
+            <img src="images/dwij-it-solutions.png" alt="Dwij IT Solutions Logo">
+        </a>
+    </p>
+</section>
+
+<section>
+    <h2>Your support</h2>
+    <p>
+        Like this tutorial, our tutorials are always open-source for learners. Like our facebook page to get more free tutorial updates.
+    </p>
+    <p>
+        <div class="fb-page" data-href="https://www.facebook.com/dwijitsolutions" data-width="330" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/dwijitsolutions"><a href="https://www.facebook.com/dwijitsolutions">Dwij IT Solutions</a></blockquote></div></div>
+        <br><br><br>
+    </p>
+</section>
+
+<section>
+    <h2>Web Development</h2>
+    <p>
+        <a class="cred">Web development</a> is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network).
+    </p>
+</section>
+
+<section>
+    <h2>Topics covered</h2>
+        <ul class="left-align">
+        <li>Twitter <a class="cred">Bootstrap</a></li>
+        <li>Digging out <a class="cred">WordPress</a></li>
+        <li>Building Web Pages with <a class="cred">Visual Composer</a></li>
+        <li><a class="cred">Professional</a> WordPress Development</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Twitter <a class="cred">Bootstrap</a></h2>
+    <ul class="left-align">
+        <li>Getting Started</li>
+        <li><a class="cred">CSS</a></li>
+        <li>Typography</li>
+        <li>Basic Elements</li>
+        <li>Advanced Web <a class="cred">Components</a></li>
+        <li>Dynamic Elements using <a class="cred">Javascript</a></li>
+        <li>Creation & <a class="cred">Customization</a></li>
+    </ul>
+</section>
+
+<section>
+    <h2><a class="cred">WordPress</a></h2>
+    <ul class="left-align">
+        <li>Setup</li>
+        <li>Free Themes</li>
+        <li>Blog Posts & Media</li>
+        <li>Pages</li>
+        <li>Widgets & Plugins</li>
+        <li>Shortcodes</li>
+    </ul>
+</section>
+
+<section>
+    <h2><a class="cred">Visual Composer</a><br><small>for Building Web pages</small></h2>
+    <ul class="left-align">
+        <li>What is Visual Composer</li>
+        <li>Elements of Visual Composer</li>
+        <li>Styling of Elements</li>
+    </ul>
+</section>
+
+<section>
+    <h2><a class="cred">Professional WordPress Development</a></h2>
+    <ul class="left-align">
+        <li>Purchasing Themes</li>
+        <li>Purchasing Domain & Hosting</li>
+        <li>CPanel Setup for WordPress</li>
+        <li>Contact Form 7</li>
+        <li>Importing Demo Content</li>
+        <li>SEO Tips & Tricks</li>
+    </ul>
+</section>
+
+<section data-background="#5b4282" data-background-transition="zoom" data-transition="zoom">
+    <img src="slides/web-development-basics/images/bootstrap_logo.png" class="nostyles">
+    <h2>Twitter Bootstrap</h2>
+    <a target="_blank" href="http://getbootstrap.com" class="cwhite">getbootstrap.com</a>
+</section>
+
+<section>
+    <h2>What is Bootstrap?</h2>
+    <ul class="left-align">
+    <li>A free front-end <a class="cred">framework</a> for faster and easier web development</li>
+    <li>Includes <a class="cred">HTML</a> and <a class="cred">CSS</a> based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional <a class="cred">JavaScript</a> plugins</li>
+    <li>Easily create <a class="cred">responsive</a> designs</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Why Use Bootstrap?</h2>
+    <ul class="left-align">
+        <li><a class="cred">Easy</a> to use</li>
+        <li><a class="cred">Responsive</a> features</li>
+        <li><a class="cred">Mobile-first</a> approach</li>
+        <li>Browser <a class="cred">compatibility</a></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Bootstrap Installation</h2>
+    <p class="left-align">Download Bootstrap-3.3.7 from <a href="http://getbootstrap.com/getting-started">http://getbootstrap.com/getting-started</a> or <a href="https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip">from link here</a>.</p>
+    <pre><code data-trim>
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap.min.css.map
+│   ├── bootstrap-theme.css
+│   ├── bootstrap-theme.css.map
+│   ├── bootstrap-theme.min.css
+│   └── bootstrap-theme.min.css.map
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+├── glyphicons-halflings-regular.eot
+├── glyphicons-halflings-regular.svg
+├── glyphicons-halflings-regular.ttf
+├── glyphicons-halflings-regular.woff
+└── glyphicons-halflings-regular.woff2
+    </code></pre>
+</section>
+
+<section>
+    <h2>Basic Template</h2>
+    <p class="">Let's start by creating a basic template.</p>
+    <pre><code data-trim class="html" contenteditable>
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+&#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+&#x3C;meta http-equiv=&#x22;X-UA-Compatible&#x22; content=&#x22;IE=edge&#x22;&#x3E;
+&#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
+&#x3C;title&#x3E;Bootstrap 101 Template&#x3C;/title&#x3E;
+
+&#x3C;link href=&#x22;css/bootstrap.min.css&#x22; rel=&#x22;stylesheet&#x22;&#x3E;
+
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+&#x3C;h1&#x3E;Hello, world!&#x3C;/h1&#x3E;
+
+&#x3C;script src=&#x22;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/bootstrap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Mobile first</h2>
+    <ul class="left-left">
+        <li>Optional mobile friendly styles.</li>
+        <li>To ensure proper rendering and touch zooming</li>
+    </ul>
+    <pre><code data-trim class="html">
+&#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
+    </code></pre>
+
+    <p>To disable zooming capabilities on mobile</p>
+    <pre><code data-trim>
+maximum-scale=1, user-scalable=no
+    </code></pre>
+</section>
+
+<section>
+    <h2>Containers</h2>
+    <h5>Responsive <a class="cred">fixed-width</a> container</h5>
+    <pre><code data-trim class="html">
+&#x3C;div class=&#x22;container&#x22;&#x3E;
+...
+&#x3C;/div&#x3E;
+    </code></pre>
+
+    <h5><a class="cred">full-width</a> container</h5>
+    <pre><code data-trim class="html">
+&#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+...
+&#x3C;/div&#x3E;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Containers</h2>
+    <h5>Responsive <a class="cred">fixed-width</a> container</h5>
+    <a href="http://dwijitsolutions.com" target="_blank"><img src="slides/web-development-basics/images/bootstrap_container_fixed_width.png" width=300></a>
+
+    <h5><a class="cred">full-width</a> container</h5>
+    <a href="https://www.flipkart.com/canon-eos-700d-ef-s18-55-mm-ii-ef-s55-250-ii-dslr-camera/p/itme6fwcz9evqnxr?pid=CAME6FWA7RHNXGPF&lid=LSTCAME6FWA7RHNXGPFVAY7SP&fm=merchandising&iid=M_0a68ac2f-e628-46d3-b280-2bce94cb39a7.200fd69f-5e21-44fa-b9f1-19e2214859bc&otracker=hp_omu_Power+Packed+Deals_2_200fd69f-5e21-44fa-b9f1-19e2214859bc_200fd69f-5e21-44fa-b9f1-19e2214859bc_2" target="_blank"><img src="slides/web-development-basics/images/bootstrap_container_full_width.jpg" width=300></a>
+</section>
+
+<section>
+    <h2>Bootstrap Grid System</h2>
+
+    <p class="left-align">Bootstrap's grid system allows up to <a class="cred">12 columns</a> across the page.</p>
+    
+    <img src="slides/web-development-basics/images/bootstrap_grid_system.png" >
+</section>
+
+<section>
+    <h2>Basic Structure of a Bootstrap Grid</h2>
+    <pre><code data-trim class="html" contenteditable>
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x3C;div class=&#x22;col-md-12&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x3C;div class=&#x22;col-md-5&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;col-md-5&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;col-md-2&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+...
+&#x3C;/div&#x3E;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Grid Classes</a></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Extra small</th>
+                <th>Small Tablets</th>
+                <th>Medium Desktops</th>
+                <th>Large Desktops</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center"> &lt; 768px</td>
+                <td class="text-center">≥ 768px</td>
+                <td class="text-center">≥ 992px</td>
+                <td class="text-center">≥ 1200px</td>
+            </tr>
+            <tr>
+                <td class="text-center">.col-<a class="cred">xs</a>-</td>
+                <td class="text-center">.col-<a class="cred">sm</a>-</td>
+                <td class="text-center">.col-<a class="cred">md</a>-</td>
+                <td class="text-center">.col-<a class="cred">lg</a>-</td>
+            </tr>
+            <tr>
+                <td class="text-center">None (Auto)</td>
+                <td class="text-center">750px</td>
+                <td class="text-center">970px</td>
+                <td class="text-center">1170px</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h4>Example: Desktop &amp; Mobile</h4>
+    <img src="slides/web-development-basics/images/bootstrap_grid_system_ex1.png" width="700">
+    <img src="slides/web-development-basics/images/bootstrap_grid_system_ex1-2.png" width="700">
+</section>
+
+<section>
+    <h4>Example: Desktop &amp; Mobile</h4>
+    <pre><code data-trim class="html" style="font-size:18px;" contenteditable>
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x3C;div class=&#x22;col-xs-12 col-md-8&#x22;&#x3E;.col-xs-12 .col-md-8&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x3C;div class=&#x22;col-xs-6&#x22;&#x3E;.col-xs-6&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;col-xs-6&#x22;&#x3E;.col-xs-6&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+    </code></pre>
+</section>
+
+<section data-background="#5b4282" data-background-transition="zoom" data-transition="zoom">
+    <img src="slides/web-development-basics/images/bootstrap_logo.png" class="nostyles" width=200><br>
+    <a class="cwhite">Twitter Bootstrap</a><br><br>
+    <h2>Enhancing CSS Elements</h2>
+</section>
+
+<section>
+    <h2>Typography</h2>
+    
+    <p class="left-align">Bootstrap's global default font-size is <a class="cred">14px</a>, with a line-height of <a class="cred">1.428</a>.</p>
+    <p class="left-align">This is applied to the <a class="cred"> "body" </a>and all paragraphs.</p>
+    <p class="left-align">In addition, all <a class="cred"> "paragraphs" </a> elements have a bottom margin that equals half their computed line-height (<a class="cred">10px</a> by default).</p>
+</section>
+
+<section>
+    <h2>Typography</h2>
+    <p>HTML headings (h1 to h6)</h4>
+    <img src="slides/web-development-basics/images/bootstrap_typography.png" >
+</section>
+
+<section>
+    <h4><a class="cred">&lt;small&gt;</a></h4>
+    <p>To create a lighter, <a class="cblue">secondary text</a> in any heading</p>
+    <img src="slides/web-development-basics/images/bootstrap_small.png" >
+</section>
+
+<section>
+    <h4><a class="cred">&#x3C;mark&#x3E;</a></h4>
+    <p>Use the mark element to <mark>highlight</mark> text.</p>
+    <pre><code data-trim class="html" contenteditable>
+Use the mark element to &lt;mark&gt;highlight&lt;/mark&gt; text.
+    </code></pre>
+</section>
+
+<section>
+    <h4><a class="cred">Strikethrough / Deleted Text</a></h4>
+    <s>This line of text is meant to be treated as no longer accurate.</s>
+    <del>This line of text is meant to be treated as deleted text.</del>
+    <pre><code data-trim class="html" contenteditable>
+&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;
+&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h4>Text <a class="cred">Alignment</a> classes</h4>
+    <img src="slides/web-development-basics/images/bootstrap_alignment.png" >
+    <pre><code data-trim class="html" contenteditable>
+&lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;/p&gt;
+&lt;p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h4>Text <a class="cred">Alignment</a> classes</h4>
+    <img src="slides/web-development-basics/images/bootstrap_lettercase.png" >
+    <pre><code data-trim class="html" contenteditable>
+&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;
+&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;
+&lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h4>Text <a class="cred">Contextual colors</a></h4>
+    <img src="slides/web-development-basics/images/bootstrap_typography_text_colors.png" >
+    <pre><code data-trim class="html" contenteditable>
+&lt;p class=&quot;text-muted&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;text-primary&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;text-danger&quot;&gt;...&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h4>Text <a class="cred">Contextual backgrounds</a></h4>
+    <img src="slides/web-development-basics/images/bootstrap_typography_text_background.png" >
+    <pre><code data-trim class="html" contenteditable>
+&lt;p class=&quot;bg-primary&quot;&gt;.bg-primary&lt;/p&gt;
+&lt;p class=&quot;bg-success&quot;&gt;.bg-success&lt;/p&gt;
+&lt;p class=&quot;bg-info&quot;&gt;.bg-info&lt;/p&gt;
+&lt;p class=&quot;bg-warning&quot;&gt;.bg-warning&lt;/p&gt;
+&lt;p class=&quot;bg-danger&quot;&gt;.bg-danger&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h4>Blockquotes</h4>
+    <img src="slides/web-development-basics/images/bootstrap_blockquote.png" >
+    
+    <pre><code data-trim class="html" contenteditable>
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Descriptions</h2>
+    <img src="slides/web-development-basics/images/bootstrap_descriptions.png" style="margin:0px;">
+    <pre><code data-trim class="html" contenteditable>
+&lt;dl&gt;
+&lt;dt&gt;Description lists&lt;/dt&gt;
+&lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+&lt;dt&gt;Euismod&lt;/dt&gt;
+&lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/dd&gt;
+&lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;
+&lt;dt&gt;Malesuada porta&lt;/dt&gt;
+&lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+&lt;/dl&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Descriptions</h2>
+    <small>Horizonal</small>
+    <img src="slides/web-development-basics/images/bootstrap_descriptions_horizontal.png" style="margin:0px;">
+    <pre><code data-trim class="html" contenteditable>
+&lt;dl class="dl-horizontal"&gt;
+&lt;dt&gt;Description lists&lt;/dt&gt;
+&lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+&lt;dt&gt;Euismod&lt;/dt&gt;
+&lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/dd&gt;
+&lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;
+&lt;dt&gt;Malesuada porta&lt;/dt&gt;
+&lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+&lt;/dl&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Tables</h2>
+    <small>Basic example</small>
+    <img src="slides/web-development-basics/images/bootstrap_table.png" style="margin:0px;">
+    <pre><code data-trim class="html" contenteditable>
+&lt;table class=&quot;table&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;th&gt;#&lt;/th&gt; &lt;th&gt;First Name&lt;/th&gt; &lt;th&gt;Last Name&lt;/th&gt; &lt;th&gt;Username&lt;/th&gt; &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt; &lt;th scope=row&gt;1&lt;/th&gt; &lt;td&gt;Mark&lt;/td&gt; &lt;td&gt;Otto&lt;/td&gt; &lt;td&gt;@mdo&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;th scope=row&gt;2&lt;/th&gt; &lt;td&gt;Jacob&lt;/td&gt; &lt;td&gt;Thornton&lt;/td&gt; &lt;td&gt;@fat&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;th scope=row&gt;3&lt;/th&gt; &lt;td&gt;Larry&lt;/td&gt; &lt;td&gt;the Bird&lt;/td&gt; &lt;td&gt;@twitter&lt;/td&gt; &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Tables</h2>
+    <small>Striped rows</small><br>
+    <img src="slides/web-development-basics/images/bootstrap_table_striped.png" style="margin:0px;">
+    <pre><code data-trim class="html" contenteditable>
+&lt;table class=&quot;table table-striped&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;th&gt;#&lt;/th&gt; &lt;th&gt;First Name&lt;/th&gt; &lt;th&gt;Last Name&lt;/th&gt; &lt;th&gt;Username&lt;/th&gt; &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt; &lt;th scope=row&gt;1&lt;/th&gt; &lt;td&gt;Mark&lt;/td&gt; &lt;td&gt;Otto&lt;/td&gt; &lt;td&gt;@mdo&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;th scope=row&gt;2&lt;/th&gt; &lt;td&gt;Jacob&lt;/td&gt; &lt;td&gt;Thornton&lt;/td&gt; &lt;td&gt;@fat&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;th scope=row&gt;3&lt;/th&gt; &lt;td&gt;Larry&lt;/td&gt; &lt;td&gt;the Bird&lt;/td&gt; &lt;td&gt;@twitter&lt;/td&gt; &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">More Table Customizations</a></h2>
+    <table>
+        <tbody>
+            <tr>
+                <th>Bordered table</th>
+                <td><a class="cred">.table-bordered</a></td>
+            </tr>
+            <tr>
+                <th>Hover rows</th>
+                <td><a class="cred">.table-hover</a></td>
+            </tr>
+            <tr>
+                <th>Condensed table</th>
+                <td><a class="cred">.table-condensed</a></td>
+            </tr>
+            <tr>
+                <th style="border-bottom:0px;">Responsive table</th>
+                <td><a class="cred">.table-responsive</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Tables</h2>
+    <small>Contextual classes for rows</small><br>
+    <img src="slides/web-development-basics/images/bootstrap_table_color.png" style="margin:0px;">
+    <pre><code data-trim class="html" contenteditable>
+&lt;tbody&gt;
+&lt;tr class=&quot;active&quot;&gt; &lt;th&gt;.active&lt;/th&gt; &lt;td&gt;Mark&lt;/td&gt; &lt;td&gt;Otto&lt;/td&gt;&lt;/tr&gt;
+&lt;tr class=&quot;success&quot;&gt; &lt;th&gt;.success&lt;/th&gt; &lt;td&gt;Jacob&lt;/td&gt; &lt;td&gt;Thornton&lt;/td&gt;&lt;/tr&gt;
+&lt;tr class=&quot;info&quot;&gt; &lt;th&gt;.info&lt;/th&gt; &lt;td&gt;Larry&lt;/td&gt; &lt;td&gt;the Bird&lt;/td&gt;&lt;/tr&gt;
+&lt;tr class=&quot;warning&quot;&gt; &lt;th&gt;.active&lt;/th&gt; &lt;td&gt;Mark&lt;/td&gt; &lt;td&gt;Otto&lt;/td&gt;&lt;/tr&gt;
+&lt;tr class=&quot;danger&quot;&gt; &lt;th&gt;.success&lt;/th&gt; &lt;td&gt;Jacob&lt;/td&gt; &lt;td&gt;Thornton&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Forms</h2>
+    <small>Simple Form</small><br>
+    <img src="slides/web-development-basics/images/bootstrap_form_simple.png">
+</section>
+
+<section>
+    <h3>Simple Form Code</h3>
+    <pre><code data-trim class="html" style="min-height:550px;min-width:900px;" contenteditable>
+&lt;form&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
+&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Email&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;checkbox&quot;&gt;
+&lt;label&gt;
+&lt;input type=&quot;checkbox&quot;&gt; Remember me
+&lt;/label&gt;
+&lt;/div&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Forms</h2>
+    <small>Horizontal Form</small><br>
+    <img src="slides/web-development-basics/images/bootstrap_form_horizontal.png">
+</section>
+
+<section>
+    <h3>Horizontal Form Code</h3>
+    <pre><code data-trim class="html" style="min-height:550px;min-width:900px;" contenteditable>
+&lt;form class=&quot;form-horizontal&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+&lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt; &lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Forms Validation states</h2>
+    <img src="slides/web-development-basics/images/bootstrap_form_labels.png">
+</section>
+
+<section>
+    <h2>Forms Validation states</h2>
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;form-group has-success&quot;&gt;
+&lt;label class=&quot;control-label&quot; for=&quot;inputSuccess1&quot;&gt;Input with success&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputSuccess1&quot; aria-describedby=&quot;helpBlock2&quot;&gt;
+&lt;span id=&quot;helpBlock2&quot; class=&quot;help-block&quot;&gt;A block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group has-warning&quot;&gt;
+&lt;label class=&quot;control-label&quot; for=&quot;inputWarning1&quot;&gt;Input with warning&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputWarning1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group has-error&quot;&gt;
+&lt;label class=&quot;control-label&quot; for=&quot;inputError1&quot;&gt;Input with error&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputError1&quot;&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Input sizes</h2>
+    <img src="slides/web-development-basics/images/bootstrap_input_sizes.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;input class=&quot;form-control input-lg&quot; type=&quot;text&quot; placeholder=&quot;.input-lg&quot;&gt;
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Default input&quot;&gt;
+&lt;input class=&quot;form-control input-sm&quot; type=&quot;text&quot; placeholder=&quot;.input-sm&quot;&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Input sizes</h2>
+    <img src="slides/web-development-basics/images/bootstrap_input_col_size.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-xs-2&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-2&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-3&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-3&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-4&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Buttons</h2>
+    <small>Simple Buttons</small><br>
+    <img src="slides/web-development-basics/images/bootstrap_buttons.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;btn btn-default&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;btn btn-default&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Button Options</h2>
+    <img src="slides/web-development-basics/images/bootstrap_button_options.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Button Sizes</h2>
+    <img src="slides/web-development-basics/images/bootstrap_button_sizes.png">
+    <p><a class="cred">btn-lg</a> , <a class="cred">btn-sm</a> , <a class="cred">btn-xs</a>
+    <pre><code data-trim class="html" contenteditable>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xs&quot;&gt;Extra small button&lt;/button&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Images</h2>
+    <small>Responsive Images with <a class="cred">.img-responsive</a></small>
+
+    <pre><code data-trim class="html" contenteditable>
+&lt;img src=&quot;...&quot; class=&quot;img-responsive&quot; alt=&quot;Responsive image&quot;&gt;
+    </code></pre>
+    
+    <p>This applies</p>
+    <pre><code data-trim class="css">max-width: 100%;
+height: auto;
+display: block; </code></pre>
+    <p>to the image so that it scales nicely to the parent element.</p>
+</section>
+
+<section>
+    <h2>Image Shapes</h2>
+    <img src="slides/web-development-basics/images/bootstrap_image_shapes.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;img src=&quot;http://placehold.it/140x140&quot; class=&quot;img-rounded&quot;&gt;
+&lt;img src=&quot;http://placehold.it/140x140&quot; class=&quot;img-circle&quot;&gt;
+&lt;img src=&quot;http://placehold.it/140x140&quot; class=&quot;img-thumbnail&quot;&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Thumbnails</h2>
+    <img src="slides/web-development-basics/images/bootstrap_thumbnails_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+&lt;img src=&quot;http://placehold.it/140x140&quot;&gt;
+&lt;/a&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Quick floats</h2>
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;pull-left&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;pull-right&quot;&gt;...&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Center content blocks</h2>
+    <p>Set an element to <a class="cred">display:block</a> and center via margin</p>
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;center-block&quot;&gt;...&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Clearfix</h2>
+    <p>Easily clear <a class="cgreen">floats</a> by adding <a class="cred">.clearfix</a> to the parent element.</p>
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;clearfix&quot;&gt;...&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Showing and hiding content</h2>
+    <p>Force an element to be shown or hidden.</p>
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;show&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;hidden&quot;&gt;...&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Responsive utilities</h2>
+    <p>Showing and hiding content by device size</p>
+    <img src="slides/web-development-basics/images/bootstrap_responsive_utilities.png" style="width:100%;">
+</section>
+
+<section data-background="#5b4282" data-background-transition="zoom" data-transition="zoom">
+    <img src="slides/web-development-basics/images/bootstrap_logo.png" class="nostyles" width=200><br>
+    <a class="cwhite">Twitter Bootstrap</a><br><br>
+    <h2>Components</h2>
+</section>
+
+<section>
+    <h2>Glyphicons</h2>
+    <small>Includes over 250 glyphs in font format</small>
+    <img src="slides/web-development-basics/images/bootstrap_glyphicons.png" style="width:100%;">
+    <a class="cwhite" target="_blank" href="http://getbootstrap.com/components/#glyphicons">getbootstrap.com/components/#glyphicons</a>
+</section>
+
+<section>
+    <h2>Glyphicons Usage</h2>
+    <img src="slides/web-development-basics/images/bootstrap_glyphicons_usage1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; aria-label=&quot;Left Align&quot;&gt;
+&lt;span class=&quot;glyphicon glyphicon-align-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;
+&lt;span class=&quot;glyphicon glyphicon-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Star
+&lt;/button&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Dropdowns</h2>
+    <img src="slides/web-development-basics/images/bootstrap_dropdown_1.png">
+</section>
+
+<section>
+    <h2>Dropdowns</h2>
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;dropdown&quot;&gt;
+&lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
+Dropdown
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&#x9;&lt;li class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Dropdown Sizing</h2>
+    <img src="slides/web-development-basics/images/bootstrap_dropdown_sizing.png">
+    <p><a class="cred">btn-lg</a> , <a class="cred">btn-sm</a> , <a class="cred">btn-xs</a>
+    <pre><code data-trim class="html" contenteditable>
+&lt;button class=&quot;btn btn-default btn-lg dropdown-toggle&quot;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Button Groups</h2>
+    <img src="slides/web-development-basics/images/bootstrap_button_groups_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Button Toolbar</h2>
+    <img src="slides/web-development-basics/images/bootstrap_button_toolbar_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;...&quot;&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Button Groups sizes</h2>
+    <img src="slides/web-development-basics/images/bootstrap_button_groups_sizes.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-group btn-group-lg&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Nesting Button Groups</h2>
+    <img src="slides/web-development-basics/images/bootstrap_button_group_nesting.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
+
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+Dropdown
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Split button dropdowns</h2>
+    <img src="slides/web-development-basics/images/bootstrap_dropdowns_split.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Input groups</h2>
+    <img src="slides/web-development-basics/images/bootstrap_input_groups.png">
+</section>
+
+<section>
+    <h2>Input groups</h2>
+    <pre class="large"><code data-trim class="html" contenteditable>
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient&apos;s username&quot; aria-describedby=&quot;basic-addon2&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon2&quot;&gt;@example.com&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot;&gt;$&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Amount (to the nearest dollar)&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot;&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;label for=&quot;basic-url&quot;&gt;Your vanity URL&lt;/label&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon3&quot;&gt;https://example.com/users/&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;basic-url&quot; aria-describedby=&quot;basic-addon3&quot;&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Nav Tabs</h2>
+    <img src="slides/web-development-basics/images/bootstrap_tabs_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Pills</h2>
+    <img src="slides/web-development-basics/images/bootstrap_pills_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;ul class=&quot;nav nav-pills&quot;&gt;
+&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Navbar</h2>
+    <img src="slides/web-development-basics/images/bootstrap_navbar_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;nav class=&quot;navbar navbar-default&quot;&gt;
+&lt;div class=&quot;container-fluid&quot;&gt;
+&lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+&lt;div class=&quot;navbar-header&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;dropdown&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;form class=&quot;navbar-form navbar-left&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+&lt;/div&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+&lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;dropdown&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+&lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">navbar-fixed-top</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_navbar_fixed_top.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;nav class=&quot;navbar navbar-default navbar-fixed-top&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+...
+&lt;/div&gt;
+&lt;/nav&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Inverted navbar</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_navbar_inverse.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;nav class=&quot;navbar navbar-inverse&quot;&gt;
+...
+&lt;/nav&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Breadcrumbs</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_breadcrumbs.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;ol class=&quot;breadcrumb&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Pagination</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_pagination.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;nav aria-label=&quot;Page navigation&quot;&gt;
+&lt;ul class=&quot;pagination&quot;&gt;
+&lt;li class=&quot;disabled&quot;&gt;
+&lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Labels</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_labels_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;span class=&quot;label label-default&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;Danger&lt;/span&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Badges</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_badges_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;
+
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;
+Messages &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
+&lt;/button&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Jumbotron</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_jumbotron_1.png" width="600">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;jumbotron&quot;&gt;
+&lt;h1&gt;Hello, world!&lt;/h1&gt;
+&lt;p&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Custom content</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_custom_content.png">
+</section>
+
+<section>
+    <h2><a class="cred">Custom content</a></h2>
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;img src=&quot;http://placehold.it/242x200&quot; alt=&quot;...&quot;&gt;
+&lt;div class=&quot;caption&quot;&gt;
+&lt;h3&gt;Thumbnail label&lt;/h3&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;Button&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Alerts</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_alerts_1.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Progress bars</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_progress_bars.png">
+    <pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;progress&quot;&gt;
+&lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;60% Complete&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Progress bars with Label</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_progress_bars_label.png">
+    <pre><code data-trim class="html" contenteditable style="max-height:300px;">
+&lt;div class=&quot;progress&quot;&gt;
+&lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot;&gt;
+&lt;span&gt;40% Complete (success)&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+&lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
+&lt;span&gt;20% Complete&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+&lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%&quot;&gt;
+&lt;span&gt;60% Complete (warning)&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+&lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 80%&quot;&gt;
+&lt;span&gt;80% Complete (danger)&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">List group</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_list_group_items.png" width=350>
+    <pre><code data-trim class="html" contenteditable style="max-height:150px;">
+&lt;ul class=&quot;list-group&quot;&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;simple list group item&lt;/li&gt;
+&lt;li class=&quot;list-group-item active&quot;&gt;active list group item&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;list group item with badge &lt;span class=&quot;badge&quot;&gt;14&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;list-group-item disabled&quot;&gt;.disabled&lt;/li&gt;
+&lt;li class=&quot;list-group-item list-group-item-success&quot;&gt;.list-group-item-success&lt;/li&gt;
+&lt;li class=&quot;list-group-item list-group-item-info&quot;&gt;.list-group-item-info&lt;/li&gt;
+&lt;li class=&quot;list-group-item list-group-item-warning&quot;&gt;.list-group-item-warning&lt;/li&gt;
+&lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;.list-group-item-danger&lt;/li&gt;
+&lt;/ul&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">List group - Custom content</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_list_group_custom.png" width=400>
+    <pre><code data-trim class="html" contenteditable style="max-height:200px;">
+&lt;div class=&quot;list-group&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
+&lt;h4 class=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;/h4&gt;
+&lt;p class=&quot;list-group-item-text&quot;&gt;...&lt;/p&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Panels</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_panels_1.png" width=400>
+    <pre><code data-trim class="html" contenteditable style="max-height:200px;">
+&lt;div class=&quot;panel panel-default&quot;&gt;
+&lt;div class=&quot;panel-body&quot;&gt;
+Basic panel example
+&lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Panel with heading</a></h2>
+    <img src="slides/web-development-basics/images/bootstrap_panels_heading.png">
+    <pre><code data-trim class="html" contenteditable >
+&lt;div class=&quot;panel panel-danger&quot;&gt;
+&lt;div class=&quot;panel-heading&quot;&gt;
+&lt;h3 class=&quot;panel-title&quot;&gt;.panel-danger&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-body&quot;&gt;
+Panel content
+&lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2><a class="cred">Wells</a></h2>
+    <p>To give an inset effect</p>
+    <img src="slides/web-development-basics/images/bootstrap_wells.png">
+    <pre><code data-trim class="html" contenteditable >
+&lt;div class=&quot;well&quot;&gt;Look, I&apos;m in a well !&lt;/div&gt;
+    </code></pre>
+</section>
+
+<section data-background="#5b4282" data-background-transition="zoom" data-transition="zoom">
+    <img src="slides/web-development-basics/images/bootstrap_logo.png" class="nostyles" width=200><br>
+    <a class="cwhite">Twitter Bootstrap</a><br><br>
+    <h2>Javascript</h2>
+    <p>Bring Bootstrap's components to life with over a dozen custom jQuery plugins.</p>
+</section>
+
+
+
+
+<section>
+    <h2>References</h2>
+    <ul>
+        <li><a target="_blank" href="http://getbootstrap.com">getbootstrap.com</a></li>
+        <li><a target="_blank" href="http://bootsnipp.com">bootsnipp.com</a></li>
+        <li><a target="_blank" href="http://dwij.net/tuts">dwij.net/tuts</a></li>
+    </ul>
+</section>
+
+<section style="text-align: left;">
+    <h1>Thank you</h1>
+    <p>
+        - <a target="_blank" href="https://ganeshbhosale.com">Ganesh Bhosale</a> <br>
+        - <a target="_blank" href="http://dwijitsolutions.com">Dwij IT Solutions</a>
+    </p>
+    <p>Did you liked this tutorial ?</p>
+    <p>
+        <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    </p>
+    <p>Checkout more such tutorials on: <a href="http://dwij.net/tuts">http://dwij.net/tuts</a></p>
+    <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>-->
+</section>
