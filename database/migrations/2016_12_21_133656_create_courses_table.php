@@ -28,7 +28,17 @@ class CreateCoursesTable extends Migration
                 "unique" => true,
                 "defaultvalue" => "",
                 "minlength" => 1,
-                "maxlength" => 60,
+                "maxlength" => 250,
+                "required" => true,
+                "listing_col" => true
+            ], [
+                "colname" => "description",
+                "label" => "Description",
+                "field_type" => "Textarea",
+                "unique" => false,
+                "defaultvalue" => "",
+                "minlength" => 0,
+                "maxlength" => 0,
                 "required" => true,
                 "listing_col" => true
             ]

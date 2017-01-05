@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Models\College;
 
 /**
  * Class HomeController
@@ -36,9 +37,10 @@ class HomeController extends Controller
     public function index()
     {
         $roleCount = \App\Role::count();
+        $colleges = College::all();
 		if($roleCount != 0) {
 			if($roleCount != 0) {
-				return view('home');
+				return view('home')->with('colleges',$colleges);
 			}
 		} else {
 			return view('errors.error', [

@@ -208,7 +208,7 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="college">College</label>
-                            <input type="text" class="form-control" placeholder="College Name" name="college" id="college" value=""/>
+                             <input type="text" class="form-control" placeholder="College Name" name="college" id="college" value=""/>
                         </div>
                     </div>
                 </div>
@@ -269,11 +269,22 @@
 
 @push('scripts')
 <script>
+
+var categories_arr = [
+	@foreach($colleges as $college)
+		"{{ $college->name }}",
+	@endforeach
+];
+	
 $('.carousel').carousel({
     interval: 3500
 })
 
 $(document).ready(function() {
+    $("#college").autocomplete({
+		source: colleges_arr
+	});	
+
     $('#student-register-form').validate({
         rules : {
             name:{required : true, maxlength: 255},

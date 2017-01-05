@@ -18,8 +18,8 @@ Route::get('/', function () {
 /* ================== student ================== */
 Route::get('/student', 'StudentController@index');
 
-/* ================== course ================== */
-Route::get('/student/course', 'CourseController@index');
+/* ================== courses ================== */
+Route::get('/courses', 'CourseController@index');
 
 
 /* ================== Homepage + Admin Routes ================== */
